@@ -1,0 +1,14 @@
+<div>
+    <h1>My Assignment Website</h1>
+    <div class="container">
+    {{#each results}}
+        <div class="card-container">
+            <div id="tester"><img id="card-pic" src="{{this.thumbnail}}" alt=""></div>
+            <a href="/posts/{{this.id}}">More Info</a>
+            <p id="card-title">Title:</br>{{this.title}}</p>
+            <p id="card-description">Description:</br>{{this.description}}</p>
+        </div>
+    {{/each}}
+    </div>
+
+</div>

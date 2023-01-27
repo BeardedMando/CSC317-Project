@@ -1,0 +1,16 @@
+<h1>Login</h1>
+
+<form id="indexForm" 
+    action="/users/login" 
+    method="POST"
+    enctype="application/x-www-form-urlencoded">
+    <div>
+        <label for="index_username">Username:</label>
+        <input type="text" id="index_username" name="index_username" required>
+
+        <label for="pass">Password (8 characters minimum): </label>
+        <input type="password" id="pass" name="password" minlength="8" required>
+
+        <input type="submit" value="Sign in">
+    </div>
+</form>

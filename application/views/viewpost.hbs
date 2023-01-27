@@ -1,0 +1,21 @@
+<h1>View Post</h1>
+<div class="image-container">
+    <h3 class="post-title">{{currentPost.title}}</h3>
+    <img class="post-image" src="/{{currentPost.image}}" />
+    <p class="post-author">Posted by : {{currentPost.username}}</p>
+
+    <div class="comment-section">
+        <div class="comment-box">
+            <textarea id="comment-text" class="comment-box-text"></textarea>
+            <button type="button" id="comment-button" data-postid="{{currentPost.id}}" class="fa fa-comment comment-box-button"
+            aria-hidden="true">Post</button>
+        </div>
+    </div>
+    {{!-- <div class="comments">
+        {{#each currentPost.comments}}
+            {{> comment this}}
+        {{/each}}
+    </div> --}}
+
+    <p class="post-date">Date Posted: {{formatDate currentPost.createdAt}}</p>
+</div>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="application/public/css/my_style.css" type="text/css" rel="stylesheet">
+        <script defer type="text/javascript" src="script.js"></script>
+        <title>Post Image</title>
+    </head>
+    <body>
+        <div>
+        <nav>
+            <a href="/Index.html">Main Page</a>
+            <a href="/login.html">Login</a>
+            <a href="/registration.html">Registration</a>
+            <a href="/postimage.html">Post Image</a>
+            <a href="/viewpost.html">View Post</a>
+
+        </nav>
+        </div>
+        <h1>Post Images</h1>
+        <div>
+            <label for="image_title">Enter a Title:</label>
+            <input type="text" id="image_title" size="30" required>
+        </div>
+        <div>
+            <label for="paragraph_text">Enter a Description:<br></label>
+            <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="avatar">Choose image to input:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        </div>
+        <div>
+            <form>
+                Do you accept Use Policy agreements: <input type="checkbox" id="myCheck"
+                name="test" required>
+            </form>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>

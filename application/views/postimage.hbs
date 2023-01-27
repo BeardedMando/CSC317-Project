@@ -1,0 +1,23 @@
+<h1>Post Images</h1>
+
+<form id="post-image" class="input-form" action="/posts/create" method="post" enctype="multipart/form-data" >
+    <div>
+        <label for="image_title">Enter a Title:</label>
+        <input type="text" id="image_title" size="45" name="title" required/>
+    </div>
+    <div>
+        <label for="paragraph_text">Enter a Description:<br></label>
+        <textarea cols="50" rows="10" name="description"></textarea>
+    </div>
+    <div>
+        <label for="avatar">Choose image to input:</label>
+        <input type="file" id="avatar" accept="image/png, image/jpeg" name="uploadImage"/>
+        
+    </div>
+    <div>
+        Do you accept Use Policy agreements: <input type="checkbox" id="myCheck" name="test" required/>
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
